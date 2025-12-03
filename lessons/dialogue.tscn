@@ -88,7 +88,7 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="VBoxContainer/ActionButtonsVBoxContainer"]
 layout_mode = 2
-text = "Test Button"
+text = "Next"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
