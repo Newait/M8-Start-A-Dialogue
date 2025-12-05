@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://chprvwfixox2y"]
+[gd_scene load_steps=18 format=3 uid="uid://chprvwfixox2y"]
 
 [ext_resource type="Theme" uid="uid://cshg3sgf0xxq" path="res://assets/main_theme.tres" id="1_nggfo"]
 [ext_resource type="Script" uid="uid://c673ndsi3esbr" path="res://lessons/dialogue.gd" id="2_n1q1t"]
@@ -21,15 +21,24 @@ script = ExtResource("5_rjbgl")
 text = "It seems so complicated"
 metadata/_custom_type_script = "uid://drf50ohltl8ys"
 
+[sub_resource type="Resource" id="Resource_1f3kq"]
+script = ExtResource("5_rjbgl")
+text = "And now your properties are well -typed! Well done!"
+metadata/_custom_type_script = "uid://drf50ohltl8ys"
+
 [sub_resource type="Resource" id="Resource_gkm7m"]
 script = ExtResource("3_ujubm")
-choices = Array[ExtResource("5_rjbgl")]([SubResource("Resource_ujubm"), SubResource("Resource_rjbgl")])
+choices = Array[ExtResource("5_rjbgl")]([SubResource("Resource_ujubm"), SubResource("Resource_rjbgl"), SubResource("Resource_1f3kq")])
 text = "Oh, you're going to use resources!"
 metadata/_custom_type_script = "uid://djqcx26plxhv2"
 
 [sub_resource type="Resource" id="Resource_1m3r0"]
 script = ExtResource("3_ujubm")
 text = "I know... But by practicing over and over, it will become simpler!"
+metadata/_custom_type_script = "uid://djqcx26plxhv2"
+
+[sub_resource type="Resource" id="Resource_m4u2h"]
+script = ExtResource("3_ujubm")
 metadata/_custom_type_script = "uid://djqcx26plxhv2"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_efgpg"]
@@ -49,7 +58,7 @@ grow_vertical = 2
 size_flags_vertical = 2
 theme = ExtResource("1_nggfo")
 script = ExtResource("2_n1q1t")
-dialogue_items = Array[ExtResource("3_ujubm")]([SubResource("Resource_gkm7m"), SubResource("Resource_1m3r0")])
+dialogue_items = Array[ExtResource("3_ujubm")]([SubResource("Resource_gkm7m"), SubResource("Resource_1m3r0"), SubResource("Resource_m4u2h")])
 
 [node name="Background" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_efgpg")
