@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="DialogueItem" load_steps=7 format=3 uid="uid://3ym4axjgtloy"]
+
+[ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="1_2nnpy"]
+[ext_resource type="Script" uid="uid://drf50ohltl8ys" path="res://dialogue_choice.gd" id="2_io8mu"]
+[ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="3_5bm78"]
+[ext_resource type="Script" uid="uid://djqcx26plxhv2" path="res://dialogue_item.gd" id="4_ouk3b"]
+
+[sub_resource type="Resource" id="Resource_2nnpy"]
+script = ExtResource("2_io8mu")
+text = "Yes, for stronger guarantees!"
+target_line_idx = 1
+metadata/_custom_type_script = "uid://drf50ohltl8ys"
+
+[sub_resource type="Resource" id="Resource_io8mu"]
+script = ExtResource("2_io8mu")
+text = "It seems so complicated"
+target_line_idx = 2
+metadata/_custom_type_script = "uid://drf50ohltl8ys"
+
+[resource]
+script = ExtResource("4_ouk3b")
+choices = Array[ExtResource("2_io8mu")]([SubResource("Resource_2nnpy"), SubResource("Resource_io8mu")])
+metadata/_custom_type_script = "uid://djqcx26plxhv2"

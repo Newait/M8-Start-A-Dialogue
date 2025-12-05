@@ -6,5 +6,5 @@
 
 [resource]
 script = ExtResource("3_ii7ip")
-text = "Hello world"
+text = "Hello World"
 metadata/_custom_type_script = "uid://msif2j83cey6"
